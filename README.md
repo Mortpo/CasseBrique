@@ -12,11 +12,11 @@ Ce projet a été fait par WALDNER Céline et ANQUETIN Romain.
 # 1. Le Menu
 ![ScreenShot](/Screenshot/Capture.JPG?raw=true "Le Menu")
 
-# 1. Le Jeu
+# 2. Le Jeu
 ![ScreenShot](/Screenshot/Capture1.JPG?raw=true "Le Menu")
 
-# 1. Le Jeu
+# 3. Le Jeu
 ![ScreenShot](/Screenshot/Capture2.JPG?raw=true "Le Menu")
 
-# 1. Une fin de partie
+# 4. Une fin de partie
 ![ScreenShot](/Screenshot/Capture3.JPG?raw=true "Le Menu")
