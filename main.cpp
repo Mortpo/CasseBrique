@@ -47,9 +47,7 @@ int main(int argc, char ** argv)
 
         if (lancementdepartie==true)
         {
-            game=Partie(renderWindow,timer,300);   //pb
-            //game.score=0; //deja dans le constructeur
-            //game.vie=3; //deja dans le constructeur
+            game=Partie(renderWindow,timer,300);
             lancementdepartie=false;
             partieencours=true;
             timer.restart();
@@ -60,10 +58,10 @@ int main(int argc, char ** argv)
             if (partieencours==true)
             {
                 game.ball.deplacement();
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::K))
+                /*if (sf::Keyboard::isKeyPressed(sf::Keyboard::K))
                 {
                     game.instancebricks.pop_back();
-                }
+                }*/
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
                 {
                     droite=true;

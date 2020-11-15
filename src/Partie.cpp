@@ -34,6 +34,7 @@ void Partie::collision()
     {
         bar.formebar.setPosition(jeu->getSize().x-60,bar.formebar.getPosition().y);
     }
+
     if(ball.formeball.getGlobalBounds().intersects(bar.formebar.getGlobalBounds(),intersection))
     {
         colisiontimer = timer->getElapsedTime();
@@ -130,7 +131,6 @@ void Partie::creationbrick()
     int i, j;
     srand(time(NULL));
     std::default_random_engine gen (rand());
-    // std::random_device(std::random_device{}()) gen;
     int positionbrickx;
     int positionbricky;
     int taillefenetrex = jeu->getSize().x - 60;
@@ -141,21 +141,14 @@ void Partie::creationbrick()
 
     for (i=0; i<instancebricks.size(); i++)
     {
-
         positionbrickx = randx(gen);
         positionbricky = randy(gen);
         instancebricks[i].formebrick.setPosition(positionbrickx, positionbricky);
-
-        instancebricks[i].pv=(rand()%10)+1;
+        instancebricks[i].pv=(rand()%4)+1;
         instancebricks[i].couleurfctpv();
         instancebricks[i].formebrick.setOutlineColor(sf::Color(255,255,255,0));
         instancebricks[i].formebrick.setOutlineThickness(1);
-
-
-
     }
-
-//possibilité de changer genre check collision a la creation
     for(i=instancebricks.size()-1; i>=0; i--)
     {
         for(j=0; j<i; j++)
@@ -324,9 +317,7 @@ Partie::Partie(sf::RenderWindow &gameWindow, sf::Clock &gametimer,int nbbrique)
     instancebricks = std::vector<Bricks>(nbbrique);
     for(int i=0; i<instancebricks.size(); i++)
     {
-
         instancebricks[i].formebrick.setSize(sf::Vector2f(50, 25));
-
     }
     creationbrick();
     bar.formebar.setSize(sf::Vector2f(120, 10));

@@ -38,9 +38,9 @@ Bricks::Bricks(float x,float y,float largeur,float hauteur,int pv,int scorebrick
 
 void Bricks::couleurfctpv()
 {
-    int r= -((pv-10)*(pv-10))*10+250;
-    int g=-((pv-5)*(pv-5))*10+250;
-    int b=-(pv)*(pv)*10+250;
+    int r= -((pv-4)*(pv-4))*10+200;
+    int g=-((pv)*(pv))*10+150;
+    int b=-(pv)*(pv)*10+150;
     if (r<0)
     {
         r=0;
@@ -53,7 +53,7 @@ void Bricks::couleurfctpv()
     {
         g=0;
     }
-//   std::cout << r <<":"<< g <<":"<< b << std::endl;
+
     formebrick.setFillColor(sf::Color(r,g,b));
 
 
