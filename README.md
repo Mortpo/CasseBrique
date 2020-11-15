@@ -1,9 +1,9 @@
 # CasseBrique
-Ceci est un projet pour crée un casse brique en C++ avec la bibliothéque SFML.
-Le jeu mesire le temps et le score de l'utilisateur.
-L'éxécutable est fait pour windows.
-Pour le compiler le programme, il faut avoir SFML est faire les liens pour compiler à la main, il n'y a pas de fichier pret fait.
-Comment le projet a été crée ce trouve dans le compte rendu
+Ceci est un projet pour crée un casse brique en C++ avec la bibliothèque SFML.
+Le jeu mesure le temps et le score de l'utilisateur.
+L'exécutable est fait pour Windows.
+Pour le compiler le programme, il faut avoir SFML et faire les liens pour compiler à la main, il n'y a pas de fichier prêt fait.
+La description du projet se trouve dans le compte rendu.
 
 Ce projet a été fait par WALDNER Céline et ANQUETIN Romain.
 
